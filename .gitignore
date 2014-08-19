@@ -1,0 +1,15 @@
+/bootstrap/compiled.php
+/vendor
+/.idea
+composer.phar
+.env.*.php
+.env.php
+.DS_Store
+Thumbs.db
+_ide_helper.php
+/node_modules
+/.sass-cache
+app/storage/clockwork/
+app/tests/phpunit/_output/*
+app/tests/codeception/_output/*
+tests/_output/*

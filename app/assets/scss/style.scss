@@ -1,0 +1,139 @@
+/*
+Theme Name: Soluciones Digital
+Theme URI: http://solucionesdigital.com
+Author: @scrubmx
+Author URI: http://solucionesdigital.com
+Description: Tema de WordPress Personalizado para IMSS
+Version: 1.0
+*/
+
+@charset "utf-8";
+
+/** Colors */
+
+$green:           #136E52;
+$lightGreen:      #70B100;
+$backgroundGreen: #F3F7EB;
+$borderGreen:     #CCE59C;
+
+$blue:            #428bca;
+$lightBlue:       #5bc0de;
+$backgroundBlue:  #d9edf7;
+$borderBlue:      #285e8e;
+
+$boderGrey:       #EEEEEE;
+$grey:            #555555;
+$darkGrey:        #333333;
+$lightGrey:       #CCCCCC;
+$backgroundGrey:  #f2f2f2;
+$red:             #d9534f;
+$greyBackground:  #FCFCFC;
+$orange:          #d45a27;
+
+/** Fonts */
+$mediumFont:   16px;
+$largeFont:    30px;
+
+/** Break Points */
+$break-medium: 991px;
+$break-small:  767px;
+
+@mixin translateZ {
+-webkit-transform:translateZ(0);
+   -moz-transform:translateZ(0);
+    -ms-transform:translateZ(0);
+     -o-transform:translateZ(0);
+        transform:translateZ(0);
+}
+
+@mixin boxShadow {
+	-webkit-box-shadow:0 2px 2px rgba(0,0,0,.05),0 1px 0 rgba(0,0,0,.05);
+	   -moz-box-shadow:0 2px 2px rgba(0,0,0,.05),0 1px 0 rgba(0,0,0,.05);
+	        box-shadow:0 2px 2px rgba(0,0,0,.05),0 1px 0 rgba(0,0,0,.05);
+}
+
+@mixin borderBottom {
+	border-bottom: 1px solid $boderGrey;
+}
+
+body {
+	margin-top: 125px;
+	font-family: "Open Sans", helvetica,arial;
+	&.admin{
+		margin-top: 40px;
+	}
+}
+
+h1, h2, h3, h4, h5, h6, figcaption {
+	color: $blue;
+	font-family: "Open Sans", helvetica,arial;
+	font-weight: bold;
+}
+
+a{
+	color: $blue;
+	font-family: "Open Sans", helvetica,arial;
+}
+
+a:hover{
+	color: $blue;
+}
+
+h1 {
+	@media screen and (min-width: ($break-medium + 1)) { font-size: 36px; }
+	@media screen and (max-width: $break-medium) { font-size: 30px; }
+	@media screen and (max-width: $break-small) { font-size: 25px; }
+}
+h2 {
+	@media screen and (min-width: ($break-medium + 1)) { font-size: 30px; }
+	@media screen and (max-width: $break-medium) { font-size: 24px; }
+	@media screen and (max-width: $break-small) { font-size: 20px; }
+}
+
+.lead {
+	color:$lightBlue;
+	font-family: "Open Sans", helvetica,arial;
+}
+
+.heading {
+	@include borderBottom;
+	font-size: 48px;
+	font-weight: 200;
+	text-align: left;
+	text-transform: uppercase;
+	line-height: 2em;
+	margin-bottom: 30px;
+
+	h2 { margin-top: 0px; }
+}
+
+.center-block {
+	float:none;
+}
+
+#modal-beneficio-image {
+	img { width: 100%; height: auto; }
+}
+
+
+footer {
+	padding: 30px 0;
+	.banner {
+		img { width: 100%; height: auto; }
+	}
+}
+
+/** Imports */
+@import 'forms';
+@import 'navigation';
+@import 'contacto';
+@import 'revista';
+@import 'beneficios';
+@import 'login';
+@import 'perfil';
+@import 'footer';
+@import 'home';
+
+/** Cargar al ultimo */
+@import 'rosenblum';
+

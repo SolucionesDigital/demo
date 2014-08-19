@@ -1,0 +1,9 @@
+/** Colors */
+/** Fonts */
+a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus { background-color: #136e52; border-color: #cce59c; }
+
+input.form-control, textarea.form-control { margin-bottom: 20px; }
+
+.category-conteiner { border: 1px solid #e3e3e3; }
+.category-conteiner ul { list-style: none; padding: 15px; }
+.category-conteiner ul label { font-weight: normal; }

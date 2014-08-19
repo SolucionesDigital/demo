@@ -1,0 +1,64 @@
+.navbar-fixed-top {
+	background: white;
+	opacity: 0.95;
+	@include translateZ;
+	@include boxShadow;
+	.nav {
+		padding: 15px 0;
+		@media screen and (max-width: $break-small) {
+			padding-bottom: 0px;
+			li {
+				border-top: 1px solid $boderGrey;
+				a { font-size: 16px; }
+			}
+		}
+	}
+	a {
+		font-size: $mediumFont;
+		&:hover, &:focus{
+			color: $blue;
+		}
+	}
+
+	.dropdown-menu {
+		opacity: 1;
+		li { height: 30px; }
+		a {
+			height: 30px;
+			padding-top: 6px;
+			font-size: 13px;
+			&:hover, &:focus{
+				color: $blue;
+			}
+		}
+	}
+	.navbar-toggle {
+		color: $blue;
+		font-size: 22px;
+		margin: 5px 5px 0px 0px;
+	}
+	.navbar-brand {
+		@media screen and (max-width: $break-small) { padding-top: 10px; }
+		img {
+			width: 150px;
+			height: 50px;
+			@media screen and (max-width: $break-small) {
+				width: 110px;
+				height: 40px;
+			}
+		}
+	}
+}
+
+.nav-pills {
+	li {
+		a { text-transform: uppercase; }
+		&.active {
+			a {
+				background-color: $blue;
+				&:hover { background-color: $blue; }
+				&:focus { background-color: $blue; }
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/** Colors */
+$green:           #136E52;
+$backgroundGreen: #F3F7EB;
+$borderGreen:     #CCE59C;
+
+$blue:            #428bca;
+$backgroundBlue:  #d9edf7;
+$borderBlue:      #285e8e;
+
+$boderGrey:       #EEEEEE;
+$grey:            #555555;
+$darkGrey:        #333333;
+$lightGrey:       #CCCCCC;
+$backgroundGrey:  #f2f2f2;
+$red:             #d9534f;
+$greyBackground:  #FCFCFC;
+$orange:          #d45a27;
+
+/** Fonts */
+$mediumFont:   16px;
+$break-medium: 991px;
+$break-small:  767px;
+
+a.list-group-item.active,
+a.list-group-item.active:hover,
+a.list-group-item.active:focus {
+	background-color: $green;
+	border-color: $borderGreen;
+}
+
+input.form-control,
+textarea.form-control { margin-bottom: 20px; }
+
+.category-conteiner {
+	border: 1px solid #e3e3e3;
+	ul {
+		list-style: none;
+		padding: 15px;
+		label {
+			font-weight: normal;
+		}
+	}
+}

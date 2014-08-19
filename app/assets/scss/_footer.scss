@@ -1,0 +1,21 @@
+footer{
+	margin-top:50px;
+	background: $backgroundGrey;
+
+	@media screen and (max-width: $break-medium) {
+		.col-sm-1{
+			width: 11%;
+			min-height: 76px;
+			float: left;
+			display: block;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		.col-sm-1{
+			width: 25%;
+			float: left;
+			display: block;
+		}
+	}
+}

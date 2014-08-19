@@ -1,0 +1,57 @@
+
+.master-hero{
+	margin-top: -45px;
+	background: $blue; /* Old browsers */
+	background: -moz-linear-gradient(left,  $blue 0%, $lightBlue 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,$blue), color-stop(100%,$lightBlue)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  $blue 0%,$lightBlue 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  $blue 0%,$lightBlue 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  $blue 0%,$lightBlue 100%); /* IE10+ */
+	background: linear-gradient(to right,  $blue 0%,$lightBlue 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#428bca', endColorstr='#5bc0de',GradientType=1 ); /* IE6-9 */
+
+	h3{
+		color: #FFFFFF;
+		font-family: "Open Sans", helvetica,arial;
+		font-weight: lighter;
+		font-size: 40px;
+	}
+	h2{
+		color: #FFFFFF;
+		font-family: "Open Sans", helvetica,arial;
+		font-weight: bold;
+		font-size: 55.5px;
+		margin-top: 0px
+	}
+
+	section {
+		margin-top: 50px;
+		.glyphicon-user {
+			font-size: 50px;
+			color: #fff;
+		}
+		.mano {
+			margin-top: -25px;
+		}
+	}
+}
+
+.text-center{
+	text-align: center;
+}
+
+.gif-beneficios{
+	background-color: #f6f7f9;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	.img-responsive{
+		margin:auto;
+	}
+	ul{
+		list-style: none;
+		color: $darkGrey;
+		font-weight: lighter;
+		font-size: 20px;
+		padding-left: 0px;
+	}
+}
