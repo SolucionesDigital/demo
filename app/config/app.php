@@ -123,7 +123,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Cviebrock\EloquentSluggable\SluggableServiceProvider',
 		'Thujohn\Pdf\PdfServiceProvider',
-		'Intervention\Image\ImageServiceProvider'
+		'Intervention\Image\ImageServiceProvider',
 
 	),
 
@@ -193,7 +193,7 @@ return array(
 		'View'              => 'Illuminate\Support\Facades\View',
 		'PDF'               => 'Thujohn\Pdf\PdfFacade',
 		'Image'             => 'Intervention\Image\Facades\Image',
-		'Thumbnail'         => 'Admin\Support\Thumbnails\Thumbnail',
+
 
 	),
 
