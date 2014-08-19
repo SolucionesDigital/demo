@@ -50,5 +50,5 @@ App::error(function(Symfony\Component\HttpKernel\Exception\NotFoundHttpException
 
 App::error(function(Soluciones\Exceptions\FormValidationException $exception, $code)
 {
-	return Redirect::back()->withInput()->withErrors($exception->getErrors());
+	return \Redirect::back()->withInput()->withErrors($exception->getErrors());
 });

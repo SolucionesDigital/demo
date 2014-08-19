@@ -1,5 +1,5 @@
 <?php
 
-namespace Soluciones\Exceptions\Exceptions;
+namespace Soluciones\Exceptions;
 
 class EntityNotFoundException extends \Exception {}
