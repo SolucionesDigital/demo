@@ -35,10 +35,10 @@
 					<tr>
 
 						<td vertical-align="center">
-							<p style="font-size: 24px; font-weight:300; text-align:left; color: #008300; display:inline;">¡Disfruta de tu Beneficio!</p>
+							<p style="font-size: 24px; font-weight:300; text-align:left; color: #428bca; display:inline;">¡Disfruta de tu Beneficio!</p>
 						</td>
 						<td width="110px">
-							<img style="display:inline;" src="{{ asset('images/imss-logo_sm.jpg') }}" alt="Imss"/>
+							<img style="display:inline; " src="{{ asset('images/demo-logo_sm.jpg') }}" alt="Imss"/>
 						</td>
 					</tr>
 				</table>
@@ -65,14 +65,14 @@
 								<table>
 									<!-- TITULO BENEFICIO -->
 									<tr>
-										<td style="border-bottom: solid 1px #ededed; padding-top:20px; padding-bottom:20px; font-weight:700; color:#106858; font-size:24px;">
+										<td style="border-bottom: solid 1px #ededed; padding-top:20px; padding-bottom:20px; font-weight:700; color:#428bca; font-size:24px;">
 										{{ $benefit->title }}
 										</td>
 									</tr>
 
 									<!-- VALIDEZ -->
 									<tr>
-										<td style="padding-top:10px; padding-bottom:20px; font-weight:700; color:#75AF1D; font-size:13px;">
+										<td style="padding-top:10px; padding-bottom:20px; font-weight:700; color:#5bc0de; font-size:13px;">
 											Válido del: {{ $benefit->valid_from }}<br />
 											Hasta: {{ $benefit->valid_to }}
 										</td>
